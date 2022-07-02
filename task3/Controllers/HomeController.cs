@@ -20,7 +20,13 @@ namespace task3.Controllers
 
         public IActionResult Index()
         {
+              ViewBag.Message="Message is Recieved"
             return View();
+        }
+         public IActionResult task(string fname , string lanme , string email, char pno )
+        {
+          
+            return View(Index);
         }
 
         public IActionResult Privacy()
